@@ -69,7 +69,7 @@ def entradas():
         descricao = request.form.get('descricao')
         valor = float(request.form['valor'])
         data = datetime.strptime(request.form['data'], '%Y-%m-%d')
-        tipo = request.form.get['tipo']
+        tipo = request.form.get('tipo')
 
         nova_entrada = Entrada(descricao=descricao, valor=valor, data=data, tipo=tipo)
         db.session.add(nova_entrada)

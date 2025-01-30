@@ -25,7 +25,7 @@ class Gasto(db.Model):
     descricao = db.Column(db.String(200), nullable=False)
     valor = db.Column(db.Float, nullable=False)
     data = db.Column(db.Date, nullable=False)
-    Categoria = db.Column(db.String(50), nullable=False) #Alimentação, Transporte
+    categoria = db.Column(db.String(50), nullable=False) #Alimentação, Transporte
 
 def criar_tabelas(app):
     with app.app_context():
