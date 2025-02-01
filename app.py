@@ -9,7 +9,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-#configuração do banco de dados
+#configuração do banco de dados.
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///controle_financeiro.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
